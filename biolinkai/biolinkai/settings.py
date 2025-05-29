@@ -77,9 +77,9 @@ WSGI_APPLICATION = 'biolinkai.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'mydatabase',
-        'USER': 'myuser',
-        'PASSWORD': 'mypassword',
+        'NAME': 'biolinkai',
+        'USER': 'postgres',
+        'PASSWORD': 'my_super_secret_password',
         'HOST': 'localhost',
         'PORT': '5432',
     }
