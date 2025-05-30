@@ -2,5 +2,6 @@ from django.db import models
 
 # Create your models here.
 class Infinity(models.Model):
-    fname=models.CharField(max_length=255)
-    lname=models.CharField(max_length=255)
+    firstname=models.CharField(max_length=255)
+    lastname=models.CharField(max_length=255)
+    phoneno=models.IntegerField(null=True)
