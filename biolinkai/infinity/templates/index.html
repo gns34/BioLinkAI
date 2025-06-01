@@ -12,7 +12,23 @@
         <h1>Welcome to BioLinkAI</h1>
         <p>Your gateway to intelligent biological data analysis.<br>
         Start exploring your data with AI-powered tools.</p>
-        <a href="#" class="btn">Get Started</a>
+        <form action="#" method="post" class="bio-form">
+            <div class="form-group">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" required>
+            </div>
+            <div class="form-group">
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" required>
+            </div>
+            <div class="form-group">
+                <label for="mobile_no">Mobile No:</label>
+                <input type="tel" id="mobile_no" name="mobile_no" pattern="[0-9]{10,15}" required>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
     </div>
+    <footer>
+        <p>&copy; 2023 BioLinkAI. All rights reserved.</p>
 </body>
 </html>
