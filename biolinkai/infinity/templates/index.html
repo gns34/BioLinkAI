@@ -8,22 +8,29 @@
 <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
+   
     <div class="container">
+         {% if error %}
+        <p style="color:red;">{{ error }}</p>
+        {% endif %}
+        {% if success %}
+            <p style="color:cyan;">{{ success }}</p>
+        {% endif %}
         <h1>Welcome to BioLinkAI</h1>
         <p>Your gateway to intelligent biological data analysis.<br>
         Start exploring your data with AI-powered tools.</p>
-        <form action="#" method="post" class="bio-form">
+        <form method="post" class="bio-form">
             <div class="form-group">
                 <label for="first_name">First Name:</label>
-                <input type="text" id="first_name" name="first_name" required>
+                <input type="text" id="firstname" name="firstname" required>
             </div>
             <div class="form-group">
                 <label for="last_name">Last Name:</label>
-                <input type="text" id="last_name" name="last_name" required>
+                <input type="text" id="lastname" name="lastname" required>
             </div>
             <div class="form-group">
                 <label for="mobile_no">Mobile No:</label>
-                <input type="tel" id="mobile_no" name="mobile_no" pattern="[0-9]{10,15}" required>
+                <input type="tel" id="phoneno" name="phoneno" required>
             </div>
             <button type="submit" class="submit-btn">Submit</button>
         </form>
