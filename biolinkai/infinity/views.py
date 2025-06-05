@@ -3,5 +3,5 @@ from django.template import loader
 from django.http import HttpResponse
 
 def showinfinity(request):
-    template=loader.get_template('index.html')
-    return HttpResponse(template.render())
+
+    return render(request, 'index.html')
